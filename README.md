@@ -10,7 +10,7 @@ Redis Handling by Python
   
 # Install Redis-Python
     # sudo pip install redis
-    sudo easy_install redis
+    # sudo easy_install redis
     # python
     >>> import redis
   
