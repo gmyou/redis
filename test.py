@@ -22,4 +22,10 @@ print 'the counter was decreased! '+ r_server.get('counter') #the key is back to
 '''Now we are ready to jump into another redis data type, the list, notice
 that they are exactly mapped to python lists once you get them'''
 
-r_server.rpush('list1', 'element1') #we use list1 as a list and push element1 as its element
+f = open("sample_mobile.txt", 'r')
+while True:
+    line = f.readline()
+    if not line: break
+    print(line.strip('\r\n'))
+    if line.strip('\r\n')!='':
+        r_server.rpush('mobileList', line.strip('\r\n')) #we use list1 as a list and push element1 as its element
