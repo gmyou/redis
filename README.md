@@ -9,6 +9,7 @@ Redis Handling by Python
     # src/redis-server
   
 # Install Redis-Python
+    # sudo easy_install pip
     # sudo pip install redis
     # sudo easy_install redis
     # python
